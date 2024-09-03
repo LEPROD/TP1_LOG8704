@@ -295,12 +295,12 @@ public class GoalManager : MonoBehaviour
         var scaleHintsGoal = new Goal(OnboardingGoals.Scale);
         var rotateHintsGoal = new Goal(OnboardingGoals.Hints);
 
-        m_OnboardingGoals.Enqueue(tapSurfaceGoal);
-        m_OnboardingGoals.Enqueue(translateHintsGoal);
-        m_OnboardingGoals.Enqueue(scaleHintsGoal);
-        m_OnboardingGoals.Enqueue(rotateHintsGoal);
-
-        m_CurrentGoal = m_OnboardingGoals.Dequeue();
+        // m_OnboardingGoals.Enqueue(tapSurfaceGoal);
+        // m_OnboardingGoals.Enqueue(translateHintsGoal);
+        // m_OnboardingGoals.Enqueue(scaleHintsGoal);
+        // m_OnboardingGoals.Enqueue(rotateHintsGoal);
+        //
+        // m_CurrentGoal = m_OnboardingGoals.Dequeue();
         m_AllGoalsFinished = false;
         m_CurrentGoalIndex = startingStep;
 
