@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - rocket
+  - faceTrackedItem
   layers:
   - Default
   - TransparentFX
