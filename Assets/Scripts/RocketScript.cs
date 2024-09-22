@@ -12,7 +12,6 @@ public class RocketScript : MonoBehaviour
     public void LaunchRocket()
     {
         launching = true;
-        AudioManager.Instance.PlayLaunchSound();
         fireEffect.gameObject.SetActive(true);
         LeanTween.moveLocalY(transform.gameObject, 60, 20).setEase(LeanTweenType.easeInSine).setOnComplete(() => Destroy(gameObject));
     }

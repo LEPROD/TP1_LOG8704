@@ -5,25 +5,16 @@ using UnityEngine;
 
 public class RocketManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     public void LaunchLastRocket()
     {
         List<RocketScript> rockets = FindObjectsByType<RocketScript>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Where(r => !r.launching).ToList();
         if (rockets.Count > 0)
         {
             rockets[rockets.Count - 1].LaunchRocket();
+            AudioManager.Instance.PlaySingleLaunchSound();
         }
+
     }
     
     public void LaunchAllRockets()
@@ -34,6 +25,10 @@ public class RocketManager : MonoBehaviour
     private IEnumerator LaunchAllRocketsCoroutine()
     {
         List<RocketScript> rockets = FindObjectsByType<RocketScript>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Where(r => !r.launching).ToList();
+        if (rockets.Count > 0)
+        {
+            AudioManager.Instance.PlayMultipleLaunchesSound();
+        }
         foreach (RocketScript rocket in rockets)
         {
             rocket.LaunchRocket();

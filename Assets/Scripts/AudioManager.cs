@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 public class AudioManager : MonoBehaviour
 {
     private static AudioManager _instance;
@@ -21,7 +22,10 @@ public class AudioManager : MonoBehaviour
     private AudioSource _audioSource;
     
     [SerializeField]
-    private AudioClip launchSound;
+    private AudioClip multipleLaunchesSound;
+    
+    [SerializeField]
+    private AudioClip singleLaunchSound;
 
     public static AudioManager Instance
     {
@@ -31,11 +35,18 @@ public class AudioManager : MonoBehaviour
         }
     }
     
-    public void PlayLaunchSound()
+    public void PlaySingleLaunchSound()
     {
-        if (!_audioSource.isPlaying)
+        _audioSource.PlayOneShot(singleLaunchSound);
+    }
+    
+    public void PlayMultipleLaunchesSound()
+    {
+        if (_audioSource.isPlaying)
         {
-            _audioSource.PlayOneShot(launchSound);
+            _audioSource.Stop();
         }
+        _audioSource.PlayOneShot(multipleLaunchesSound);
+
     }
 }

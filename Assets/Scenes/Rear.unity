@@ -2845,7 +2845,6 @@ GameObject:
   - component: {fileID: 1012632964}
   - component: {fileID: 1012632969}
   - component: {fileID: 1012632962}
-  - component: {fileID: 1012632961}
   - component: {fileID: 1012632968}
   m_Layer: 0
   m_Name: Main Camera
@@ -2869,23 +2868,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1330023706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1012632961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012632959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d371838dcbec345458d8ca0dc3e26461, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arSession: {fileID: 702413258}
-  arPlaneManager: {fileID: 2512387470231460708}
-  arRaycastManager: {fileID: 2512387470231460731}
-  arFaceManager: {fileID: 0}
-  arOcclusionManager: {fileID: 1012632968}
 --- !u!114 &1012632962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5156,7 +5138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 1700672243}
-  launchSound: {fileID: 8300000, guid: e221093c3a671c844a5ef23466554f7a, type: 3}
+  multipleLaunchesSound: {fileID: 8300000, guid: e221093c3a671c844a5ef23466554f7a,
+    type: 3}
+  singleLaunchSound: {fileID: 8300000, guid: 12f248b27bc3cfe4aac3d5dbba86bcd3, type: 3}
 --- !u!4 &1700672242
 Transform:
   m_ObjectHideFlags: 0
