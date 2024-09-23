@@ -2,51 +2,45 @@ using UnityEngine;
 using UnityEngine.Serialization;
 public class AudioManager : MonoBehaviour
 {
-    private static AudioManager _instance;
+    [SerializeField]
+    private AudioSource audioSource;
 
-    void Awake()
+    [SerializeField]
+    private AudioClip multipleLaunchesSound;
+
+    [SerializeField]
+    private AudioClip singleLaunchSound;
+
+
+    private void Awake()
     {
-        // Singleton pattern to ensure only one instance exists
-        if (_instance != null && _instance != this)
+        // Pattern singleton
+        if (instance != null && instance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            _instance = this;
+            instance = this;
+            // Garde la musique lors de la rotation de caméra
             DontDestroyOnLoad(gameObject);
         }
     }
 
-    [SerializeField]
-    private AudioSource _audioSource;
-    
-    [SerializeField]
-    private AudioClip multipleLaunchesSound;
-    
-    [SerializeField]
-    private AudioClip singleLaunchSound;
+    public static AudioManager instance { get; private set; }
 
-    public static AudioManager Instance
-    {
-        get
-        {
-            return _instance;
-        }
-    }
-    
     public void PlaySingleLaunchSound()
     {
-        _audioSource.PlayOneShot(singleLaunchSound);
+        audioSource.PlayOneShot(singleLaunchSound);
     }
-    
+
     public void PlayMultipleLaunchesSound()
     {
-        if (_audioSource.isPlaying)
+        if (audioSource.isPlaying)
         {
-            _audioSource.Stop();
+            audioSource.Stop();
         }
-        _audioSource.PlayOneShot(multipleLaunchesSound);
+        audioSource.PlayOneShot(multipleLaunchesSound);
 
     }
 }

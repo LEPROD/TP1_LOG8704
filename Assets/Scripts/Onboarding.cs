@@ -4,10 +4,11 @@ public class Onboarding : MonoBehaviour
 {
     [SerializeField]
     private Transform onboardingUI;
-    void Start()
+    private void Start()
     {
         onboardingUI.gameObject.SetActive(false);
-        
+
+        // Si c'est la première fois que le jeu est lancé
         if (!PlayerPrefs.HasKey("FirstLaunch"))
         {
             PlayerPrefs.SetInt("FirstLaunch", 1);
@@ -15,10 +16,10 @@ public class Onboarding : MonoBehaviour
             StartTutorial();
         }
     }
-    
+
     public void StartTutorial()
     {
         onboardingUI.gameObject.SetActive(true);
     }
-    
+
 }

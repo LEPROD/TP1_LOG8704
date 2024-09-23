@@ -6,5 +6,5 @@ public class SceneSwitcher : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
     }
-    
+
 }

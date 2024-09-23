@@ -3,9 +3,8 @@ using UnityEngine;
 
 public class RocketScript : MonoBehaviour
 {
-    public bool launching;
+    private bool launching;
     [SerializeField] private Transform fireEffect;
-    private AudioManager _audioManager;
     [SerializeField] private AudioClip launchSound;
 
 
@@ -13,6 +12,12 @@ public class RocketScript : MonoBehaviour
     {
         launching = true;
         fireEffect.gameObject.SetActive(true);
+        // Joue l'animation de lancement
         LeanTween.moveLocalY(transform.gameObject, 60, 20).setEase(LeanTweenType.easeInSine).setOnComplete(() => Destroy(gameObject));
+    }
+    
+    public bool IsLaunching()
+    {
+        return launching;
     }
 }

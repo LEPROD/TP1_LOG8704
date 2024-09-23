@@ -8,15 +8,13 @@ public class RocketSpawner : MonoBehaviour
     [SerializeField] private GameObject rocketPrefab;
     [SerializeField] private ARRaycastManager arRaycastManager;
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
-    private List<GameObject> spawnedRockets = new List<GameObject>();
     private GameObject selectedRocket = null;
     private Vector2 touchPosition;
-
-    private Camera _camera;
+    private Camera cam;
 
     private void Awake()
     {
-        _camera = Camera.main;
+        cam = Camera.main;
     }
 
     private void Update()
@@ -50,11 +48,12 @@ public class RocketSpawner : MonoBehaviour
                 MoveSelectedRocket();
                 break;
             case TouchPhase.Ended:
-                selectedRocket = null; // Deselect the rocket when touch ends
+                selectedRocket = null; // Deselectionne la fusée quand le doigt est relâché
                 break;
         }
     }
 
+    // Permet de lancer des fusées depuis l'éditeur Unity
     private void HandleMouse()
     {
         if (Input.GetMouseButtonDown(0))
@@ -69,14 +68,14 @@ public class RocketSpawner : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            selectedRocket = null; // Deselect the rocket when mouse button is released
+            selectedRocket = null; // Deselectionne la fusée quand le bouton de la souris est relâché
         }
     }
 
     private void SelectOrSpawnRocket()
     {
-        // Check if a rocket is touched/clicked
-        Ray ray = _camera.ScreenPointToRay(touchPosition);
+        // Vérifie si une fusée est selectionnée, donc touchée avec le doigt
+        Ray ray = cam.ScreenPointToRay(touchPosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
@@ -87,13 +86,12 @@ public class RocketSpawner : MonoBehaviour
             }
         }
 
-        // If no rocket was selected, spawn a new one
+        // Si aucune fusée n'est selectionnée on en crée une nouvelle
         if (arRaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
         {
             Pose hitPose = hits[0].pose;
             GameObject newRocket = Instantiate(rocketPrefab, hitPose.position, hitPose.rotation);
-            spawnedRockets.Add(newRocket);
-            selectedRocket = newRocket; // Select the newly spawned rocket
+            selectedRocket = newRocket; // Selectionne la fusée nouvellement créée
         }
     }
 
