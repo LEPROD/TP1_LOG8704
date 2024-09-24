@@ -1,0 +1,10 @@
+# ninja log v5
+23	2228	7486339891321501	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	49452652f75a02e2
+79	2236	7486339891341835	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	414d1b1541729ada
+65	2257	7486339891625634	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a203fc749cd379f0
+119	2265	7486339891723320	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	1c8a30fc7052fba3
+134	2296	7486339892014299	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	1f708ee944bfe0c
+11	2397	7486339892965179	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	6625e6dcd29644a0
+92	2590	7486339894947616	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	a39d72eeef03c0dd
+1	2723	7486339896186201	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	942fcb30589437db
+2723	2941	7486339898303757	C:/Users/mathy/Documents/_VR/Elon/TP1_LOG8704/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/2d73h1r6/obj/arm64-v8a/libgame.so	e8f58849f73d8209

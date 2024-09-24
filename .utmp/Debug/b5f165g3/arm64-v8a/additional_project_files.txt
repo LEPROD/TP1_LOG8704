@@ -1,0 +1,17 @@
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\GAToUnityCallbacks.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\MacroEnd.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\MacroHeaderBegin.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\MacroSourceBegin.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UGAApplication.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UGAConfiguration.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UGADebug.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UGAEvents.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UGAInput.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UGASoftKeyboard.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UGASoftKeyboardCallbacks.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UGATypes.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UGAVersion.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UnityToGACallbacks.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UnityToGAConfigurationCallbacks.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UnityToGAKeyEventCallbacks.h
+D:\Projets Unity\TP1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.unity.template.ar_mobile\gradle-project\unityLibrary\src\main\cpp\GameActivity\UnityToGAMotionEventCallbacks.h

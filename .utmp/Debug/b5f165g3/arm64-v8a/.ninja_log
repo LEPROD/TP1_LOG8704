@@ -1,0 +1,19 @@
+# ninja log v5
+33	1705	7482808111296319	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	60a0b45b1797b7d1
+41	1771	7482808112048479	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f69023e9d56e844f
+12	1710	7482808111302244	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	9df4cc95d6f4b9fd
+0	1793	7482808112315578	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	4df8b397d3065765
+52	1716	7482808111438545	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	9e1dcacd8b5ac1c2
+19	1718	7482808111393445	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	bd198766716149f8
+1974	2091	7482808115282058	D:/Projets Unity/TP1_LOG8704/Library/PramData/AndroidApplicationController/Cache/com.unity.template.ar_mobile/gradle-project/unityLibrary/build/intermediates/cxx/Debug/b5f165g3/obj/arm64-v8a/libgame.so	2b88e2f08806a97b
+26	1892	7482808113286954	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	60177db6c9524fce
+7	1974	7482808114060618	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	33845390030fbbc0
+37	1829	7482863504791619	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	60a0b45b1797b7d1
+13	1839	7482863504944741	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	9df4cc95d6f4b9fd
+23	1871	7482863505279558	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	9e1dcacd8b5ac1c2
+44	1888	7482863505440812	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f69023e9d56e844f
+4	1924	7482863505878175	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	bd198766716149f8
+18	1964	7482863506246279	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	4df8b397d3065765
+30	2068	7482863507301385	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	60177db6c9524fce
+9	2132	7482863507933026	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	33845390030fbbc0
+2132	2387	7482863510408900	D:/Projets Unity/TP1_LOG8704/Library/PramData/AndroidApplicationController/Cache/com.unity.template.ar_mobile/gradle-project/unityLibrary/build/intermediates/cxx/Debug/b5f165g3/obj/arm64-v8a/libgame.so	2b88e2f08806a97b
