@@ -4,7 +4,7 @@ Utiliser Unity 6000.0.15f1 pour lancer le projet. Répondre "non" à la question
 
 # Build
 
-Testé sous Android 10 et 14. Ajouter les scènes Front et Back au projet.
+Testé sous Android 10 et 14. Ajouter les scènes Front et Rear au projet. La scène principale est Rear.
 
 # Utilisation
 
